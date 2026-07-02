@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import SidebarMenu from "./components/SidebarMenu/SidebarMenu";
+import Home from "./pages/Home";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ function App() {
       />
       
       <Routes>
-        <Route path="/" element={<h1>Inicio</h1>} />
+        <Route path="/" element={< Home />} />
         <Route path="/carrito" element={<h1>Carrito</h1>} />
       </Routes>
     </>
