@@ -40,7 +40,7 @@ function Navbar({
           type="search"
           placeholder="Buscar productos"
           value={searchTerm}
-          onChange={onSearchChange}
+          onChange={onSearchChange} // acá se van capturando cada cambio: j je jea jean jeans
         />
       </form>
     </header>
